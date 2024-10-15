@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>??????</title>
+    <link rel="stylesheet" href="/Css/home/home.css">
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <main>
+            <div class="home swiper" id="home">
+                <div class="swiper-wrapper">
+            
+                  <div class="swiper-slide container">
+                    <img src="https://cdn.galaxycine.vn/media/2024/9/30/shopee-3_1727693002891.jpg" alt="" href="https://www.galaxycine.vn/khuyen-mai/voucher-giam-khung-danh-tang-cac-stars/">
+                  </div>
+            
+                  <div class="swiper-slide container">
+                    <img src="https://cdn.galaxycine.vn/media/2024/9/30/shopee-3_1727693002891.jpg" alt="" href="https://www.galaxycine.vn/khuyen-mai/voucher-giam-khung-danh-tang-cac-stars/">
+                  </div>
+            
+                  <div class="swiper-slide container">
+                    <img src="https://cdn.galaxycine.vn/media/2024/9/30/shopee-3_1727693002891.jpg" alt="" href="https://www.galaxycine.vn/khuyen-mai/voucher-giam-khung-danh-tang-cac-stars/">
+                  </div>
+            
+                  <div class="swiper-slide container">
+                    <img src="https://cdn.galaxycine.vn/media/2024/9/30/shopee-3_1727693002891.jpg" alt="" href="https://www.galaxycine.vn/khuyen-mai/voucher-giam-khung-danh-tang-cac-stars/">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- <div class="quick-buy">
+                    <div class="relative h-full col-span-3">
+                        <span class="number">1</span>
+                        <div>
+                            <div aria-label="Dropdown select" class="react-dropdown-select" color="#0074D9">
+                                <div class="react-dropdown-select-content">
+                                    <span>Chọn phim</span>
+                                    <input class="react-dropdown-select-input" readonly placeholder value>
+                                </div>
+                                <div class="react-dropdown-select-dropdown-handle" rotate="1" color="#0074D9">
+                                    <svg fill="currentColor" viewBox="0 0 40 40">
+                                        <path d="........."></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <div class="quick-buy">
+                    <div class="step">
+                        <span class="number" type="Dropdown">1</span>
+                        <div>
+                            <span>Chọn Phim</span>
+                            <select>
+                                <option></option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="number" type="Dropdown">2</span>
+                        <div>
+                            <span>Chọn Rạp</span>
+                            <select>
+                                <option></option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="number" type="Dropdown">3</span>
+                        <div>
+                            <span>Chọn Ngày</span>
+                            <select>
+                                <option></option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="number" type="Dropdown">4</span>
+                        <div>
+                            <span>Chọn Suất</span>
+                            <select>
+                                <option></option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                                <option>a</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="buy-button">Mua vé nhanh</button>
+                </div>
+
+
+                <div class="navbar">
+                    <span class="navbar-title">PHIM</span>
+                    <ul class="navbar-links">
+                        <li class="active">Đang chiếu</li>
+                        <li>Sắp chiếu</li>
+                        <li>Phim IMAX</li>
+                        <li class="location" onclick="toggleTinhThanh()"><span class="icon">📍</span>Toàn quốc</li>
+                    </ul>
+                </div>
+
+                <div class="tinh-thanh" id="tinhThanhList">
+                    <ul>
+                        <li>TP Hồ Chí Minh</li>
+                        <li>Hà Nội</li>
+                        <li>Đà Nẵng</li>
+                        <li>An Giang</li>
+                        <li>Bà Rịa Vũng Tàu</li>
+                        <li>Bến Tre</li>
+                        <li>Cà Mau</li>
+                        <li>Đắk Lắk</li>
+                        <li>Hải Phòng</li>
+                        <li>Khánh Hòa</li>
+                        <li>Nghệ An</li>
+                        <li>Thừa Thiên Huế</li>
+                        </ul>
+                </div>
+
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="/Js/Home/home.js"></script>
+    </body>
+</html>

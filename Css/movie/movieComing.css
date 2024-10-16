@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body{
+    font-family:"Nunito Sans", sans-serif;
+}
+.MoviesNow{
+    padding-top: 30px;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+}
+  
+.card-img-top {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+.card:hover .card-img-top {
+    opacity: 0.5;
+  }
+  
+.card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.card:hover .card-img-overlay {
+    opacity: 1;
+  }
+.btn{
+    background-color: #f58020;
+    border: none; 
+    padding: 5px 3px;
+    margin-bottom: 6px;
+}  
+.btn:hover {
+    background-color: #fb9440;
+}
+.trailer-button {
+    background-color: transparent;
+    border: 1.3px solid #fff;
+    border-radius: 10px;
+    padding: 6px 3px;
+    width: 116px;
+    height: 45px;
+    color: #fff;
+    margin-top: 6px;
+    font-size: 14px;
+}
+.trailer-button:hover{
+    background-color: #c57433;
+    border: 1.3px solid #c57433;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.trailer-button i {
+    margin-right: 5px;
+  }
+.title-link{
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+.title-item{
+    list-style: none;
+    padding-top: 15px;
+}
+.title-movieNow {
+    position: relative;
+    font-weight: 380;
+}
+.title-movieNow::before {
+    content: '';
+    position: absolute;
+    left: 0px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 45%;
+    background-color: #034EA2;
+}
+.MoviesNow-content{
+    padding-top: 50px;
+
+}
+p{
+    font-size: 14px;
+}
+.title-content{
+    list-style: none;
+    padding-top: 2px;
+}
+.title-linkcontent{
+    text-decoration: none;
+    color: #034EA2;
+    font-size: 14px;
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+    color: #034EA2;
+    font-size: 14px;
+    font-weight: bold;
+}
+.p_content{
+    padding-top: 5px;
+}
+.contentt{
+    padding-top: 40px;
+}
+.p_contentt{
+    padding-top: 5px;
+    font-weight: bold;
+}

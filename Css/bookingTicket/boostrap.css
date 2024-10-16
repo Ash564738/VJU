@@ -1,0 +1,26 @@
+:root {
+    --background-grey: rgb(249,249,249);
+    --progress-color: rgb(34,100,174);
+    --progress-incompleted-color: rgb(216, 216, 216);
+}
+
+/*------- Color -------- */
+.custom-bg-basic {
+    background-color: var(--background-grey) !important;
+}
+
+.custom-bg-progress {
+    background-color: var(--progress-color) !important;
+}
+
+.custom-text-progress {
+    color: var(--progress-color);
+}
+
+.custom-text-progress-incompleted {
+    color: var(--progress-incompleted-color);
+}
+
+.button-link-unstyled {
+    text-decoration: none !important;
+}

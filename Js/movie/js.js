@@ -22,3 +22,27 @@ function setActiveToNavLink() {
 setActiveToNavLink();
 console.log("Current URL:", currentLocation);
 navLinks.forEach(link => console.log("Link URL:", link.href));
+
+
+const showVideoBtn = document.getElementById('showVideoBtn');
+const videoOverlay = document.getElementById('videoOverlay');
+const closeVideoBtn = document.getElementById('closeVideoBtn');
+
+
+showVideoBtn.addEventListener('click', function() {
+    videoOverlay.style.display = 'flex';
+});
+
+
+closeVideoBtn.addEventListener('click', function() {
+    videoOverlay.style.display = 'none';
+    videoElement.pause();
+    videoElement.currentTime = 0;
+});
+
+
+videoOverlay.addEventListener('click', function(e) {
+    if (e.target === videoOverlay) {
+        videoOverlay.style.display = 'none';
+    }
+});

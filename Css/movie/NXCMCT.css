@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body{
+    font-family:"Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ /* background-image: url('https://cdn.galaxycine.vn/media/2024/4/16/nxcmct-750_1713252328057.jpg'); */
+.position-relative{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+.background-img {
+    /* max-height: 500px; */
+    object-fit: cover;
+}
+.poster-img {
+    width: 280px;
+    max-height: 500px;
+    border-radius: 8px;
+    border: 1.6px solid #fff;
+    margin-top: 500px;
+    margin-left: 100px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .poster-img {
+        width: 250px; /* Smaller size for mobile */
+    }
+}
+.movie-title {
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.rating {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.star {
+    color: #f58020;
+    font-size: 1.5rem;
+}
+
+.poster img {
+    max-height: 400px;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.poster{
+    align-items: center;
+}
+.badge {
+    font-size: 16px;
+    margin-right: 0.5rem;
+}
+.container.content {
+    position: absolute;
+    top: 380px;
+    left:0;
+    right: 0;
+    z-index: 5;
+}
+p strong {
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 16px;
+    
+}
+.card {
+    position: relative;
+}
+.overlay {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover .overlay {
+    opacity: 1;
+    display: flex;
+}
+.muave-button{
+    position: absolute;
+}
+.muave-button:hover {
+    background: linear-gradient(to right, #FC4100, #FFC55A);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.textend-btn {
+    color: #f58020;
+    border-color: #f58020;
+}
+.text-end{
+    padding-top: 10px;
+}
+.textend-btn:hover {
+    background-color: #f58020;
+    color: white;
+}
+.movieComing{
+    padding-top: 100px;
+}
+.text-sm{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.contentfilm{
+    padding-top: 600px;
+}
+p{
+    font-size: 14px;
+}
+.title-content{
+    list-style: none;
+    padding-top: 2px;
+}
+.p_content{
+    padding-top: 5px;
+}
+.contentt{
+    padding-top: 40px;
+}
+.p_contentt{
+    padding-top: 5px;
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+    color: #034EA2;
+    font-size: 14px;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}

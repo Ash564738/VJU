@@ -31,7 +31,7 @@
                     <img src="../../../Assets/Images/movie/movieComing/co-dau-hao-mon-1_1728456485936.jpg" class="card-img-top" alt="...">
                     <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
                     <button type = "button" class="btn btn-lg">
-                        <a href="#"><img width="112" height="36" src="https://www.galaxycine.vn/_next/static/media/btn-ticket.42d72c96.webp"></a>
+                        <a href="../../../Views/Pages/movie/datve_NXCMCT.html"><img width="112" height="36" src="https://www.galaxycine.vn/_next/static/media/btn-ticket.42d72c96.webp"></a>
                     </button>
                     <button class="trailer-button btn-lg">
                         <i class="fas fa-play-circle"></i>Trailer
@@ -143,15 +143,26 @@
                     <img src="../../../Assets/Images/movie/movieComing/ngay-xua-co-mot-chuyen-tinh-500_1727752947238.jpg" class="card-img-top" alt="...">
                     <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
                         <button type = "button" class="btn btn-lg">
-                            <a href="#"><img width="112" height="36" src="https://www.galaxycine.vn/_next/static/media/btn-ticket.42d72c96.webp"></a>
+                            <a href="../../../Views/Pages/movie/datve_NXCMCT.html"><img width="112" height="36" src="https://www.galaxycine.vn/_next/static/media/btn-ticket.42d72c96.webp"></a>
                         </button>
-                        <button class="trailer-button btn-lg">
+                        <button class="trailer-button btn-lg" id="showVideoBtn">
                             <i class="fas fa-play-circle"></i>Trailer
                         </button>
                     </div>
                 </div>
                 <li class="title-item"><a class="title-link" href="#">Ngày Xưa Có Một Chuyện Tình</a></li>
             </div>
+            <!-- Video Overlay -->
+            <div id="videoOverlay" class="overlay">
+                <div class="video-container">
+                    <span class="close-btn" id="closeVideoBtn">&times;</span>
+                    <video controls>
+                        <source src="../../../Assets/Images/movie/movieComing/Y2meta.app-NGÀY XƯA CÓ MỘT CHUYỆN TÌNH - Main Trailer _ Suất chiếu đặc biệt từ 25.10.2024.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- -------- -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="../../../Assets/Images/movie/movieComing/vung-dat-bi-nguyen-rua-500_1728961947385.jpg" class="card-img-top" alt="...">

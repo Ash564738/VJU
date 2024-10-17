@@ -29,13 +29,16 @@ body{
     opacity: 1;
   }
 .btn{
-    background-color: #f58020;
+    /* background-color: #f58020; */
     border: none; 
     padding: 5px 3px;
     margin-bottom: 6px;
+
 }  
 .btn:hover {
-    background-color: #fb9440;
+    /* background-color: #fb9440; */
+    transform: scale(1.1);
+
 }
 .trailer-button {
     background-color: transparent;
@@ -43,13 +46,14 @@ body{
     border-radius: 10px;
     padding: 6px 3px;
     width: 116px;
-    height: 45px;
+    height: 40px;
     color: #fff;
     margin-top: 6px;
     font-size: 14px;
+
 }
 .trailer-button:hover{
-    background-color: #c57433;
+    background-color: #fb9440;
     border: 1.3px solid #c57433;
     border-radius: 10px;
     font-size: 14px;
@@ -113,4 +117,38 @@ p{
 .p_contentt{
     padding-top: 5px;
     font-weight: bold;
+}
+
+.overlay {
+    display: none;
+    position: fixed; /* Cover entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    z-index: 1000; /* Ensure it appears on top */
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }

@@ -1,5 +1,5 @@
-const NAVIGATION_FILE_PATH = './nav.html'
-const NAVIGATION_STYLE_PATH = './../nav.css'
+const NAVIGATION_FILE_PATH = '/nav.html'
+const NAVIGATION_STYLE_PATH = '/nav.css'
 
 const getHtmlData = async (filePath) => {
     let returnData = undefined;
@@ -23,7 +23,7 @@ const getHtmlData = async (filePath) => {
 const insertNavigationBar = async () => {
     let navigationHTMLText = await getHtmlData(NAVIGATION_FILE_PATH);
 
-
+//    document.body.innerHTML = navigationHTMLText
 
 
     
@@ -38,8 +38,8 @@ const insertNavigationBar = async () => {
     }
     console.log(doc)
 
-//    document.body.insertBefore(divTags.item(divTags.length-1),document.body.firstChild)
     document.body.insertBefore(doc.getElementsByTagName('header').item(0),document.body.firstChild)
+    
 }   
 
 insertNavigationBar()

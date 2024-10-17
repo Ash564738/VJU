@@ -1,5 +1,5 @@
-const NAVIGATION_FILE_PATH = '/nav.html'
-const NAVIGATION_STYLE_PATH = '../nav.css'
+const NAVIGATION_FILE_PATH = './nav.html'
+const NAVIGATION_STYLE_PATH = './../nav.css'
 
 const getHtmlData = async (filePath) => {
     let returnData = undefined;

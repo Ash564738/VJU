@@ -1,3 +1,6 @@
+export {
+    getHtmlData
+}
 const NAVIGATION_FILE_PATH = '/nav.html'
 const NAVIGATION_STYLE_PATH = '/nav.css'
 
@@ -40,6 +43,6 @@ const insertNavigationBar = async () => {
 
     document.body.insertBefore(doc.getElementsByTagName('header').item(0),document.body.firstChild)
     
-}   
+}
 
 insertNavigationBar()

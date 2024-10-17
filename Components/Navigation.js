@@ -23,11 +23,10 @@ const getHtmlData = async (filePath) => {
 const insertNavigationBar = async () => {
     let navigationHTMLText = await getHtmlData(NAVIGATION_FILE_PATH);
 
-    document.body.innerHTML = navigationHTMLText + document.body.innerHTML;
 
 
 
-    /*
+    
     const parser = new DOMParser();
     let doc = parser.parseFromString(navigationHTMLText,'text/html')
     let svgTags = doc.getElementsByTagName('svg')
@@ -38,9 +37,9 @@ const insertNavigationBar = async () => {
         svgTag.replaceWith(parsedSvg.documentElement)
     }
     console.log(doc)
-*/
+
 //    document.body.insertBefore(divTags.item(divTags.length-1),document.body.firstChild)
- //   document.body.insertBefore(doc.getElementsByTagName('header').item(0),document.body.firstChild)
+    document.body.insertBefore(doc.getElementsByTagName('header').item(0),document.body.firstChild)
 }   
 
-//insertNavigationBar()
+insertNavigationBar()

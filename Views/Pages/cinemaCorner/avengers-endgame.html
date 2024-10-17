@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thể Loại Phim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/Css/cinemaCorner/MovieCategory.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-content">
+                <ul class="logo">
+                    <a href="/index.html"><img src="/Assets/Images/movie/tv.png"></a>
+                </ul>
+                <ul class="nav-links">
+                    <li>
+                        <button class = "muave">
+                            <a href="#"><img width="112" height="36" src="https://www.galaxycine.vn/_next/static/media/btn-ticket.42d72c96.webp"></a>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#">Phim
+                            <span>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Góc Điện Ảnh
+                            <span>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="MovieCategory.html">Thể Loại Phim</a></li>
+                            <li><a class="dropdown-item" href="Actors.html">Diễn Viên</a></li>
+                            <li><a class="dropdown-item" href="Directors.html">Đạo Diễn</a></li>
+                            <li><a class="dropdown-item" href="MovieReview.html">Bình Luận Phim</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav-links">
+                    <li class="container">
+                        <input class="search_checkbox" type="checkbox"> 
+                        <div class="mainbox">
+                            <div class="iconContainer">
+                                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path>
+                                </svg>
+                            </div>
+                            <input class="search_input" placeholder="Tìm Kiếm " type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <button class = "dangnhap">
+                            <a href="#">Đăng Nhập</a>
+                            <svg fill="#ffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" stroke="#ffff" style="height: 1em;">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M 28.0117 27.3672 C 33.0508 27.3672 37.3867 22.8672 37.3867 17.0078 C 37.3867 11.2187 33.0274 6.9297 28.0117 6.9297 C 22.9961 6.9297 18.6367 11.3125 18.6367 17.0547 C 18.6367 22.8672 22.9961 27.3672 28.0117 27.3672 Z M 13.2930 49.0703 L 42.7305 49.0703 C 46.4101 49.0703 47.7226 48.0156 47.7226 45.9531 C 47.7226 39.9062 40.1523 31.5625 28.0117 31.5625 C 15.8477 31.5625 8.2774 39.9062 8.2774 45.9531 C 8.2774 48.0156 9.5898 49.0703 13.2930 49.0703 Z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <a class = "lienhe">Liên Hệ
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <g>
+                                        <path fill-rule="evenodd" d="M189.279 107.079h284.235L304.693 222.812l-114.834-78.723c4.372-11.707 4.409-24.94-.58-37.01zm-74.337 67.172 41.43-25.226c12.295-7.486 16.376-23.458 9.178-35.925l-37.403-64.784c-3.837-6.647-9.645-10.923-17.131-12.613-7.487-1.691-14.567-.326-20.889 4.027L21.915 86.694C-10.554 201.098 135.355 448.778 247.259 477l74.778-35.591c6.93-3.298 11.653-8.748 13.932-16.077s1.48-14.496-2.358-21.143l-37.403-64.784c-7.197-12.467-23.07-16.919-35.701-10.014l-42.561 23.266c-42.09-37.433-91.63-123.238-103.004-178.406zm379.216-52.288L311.443 247.221c-4.275 2.918-9.768 2.69-13.741-.165l-121.3-83.155a50.509 50.509 0 0 1-7.549 5.624l-26.204 15.954c13.767 44.43 47.832 103.432 79.426 137.569l26.919-14.716c24.052-13.148 54.292-4.666 67.997 19.073l23.196 40.176h135.108c10.668 0 19.396-8.728 19.396-19.396v-221.71a19.25 19.25 0 0 0-.533-4.512z" clip-rule="evenodd" fill="#ff7300" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="line-default"></div>
+    <div id="trailer-wrapper" class="trailer__wrapper">
+        <iframe width="90%" height="90%" src="https://www.youtube.com/embed/q6UDgv5TGWA?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" class="rounded"></iframe>
+    </div>    
+    <main class="container-lg my-0 mx-auto py-4 px-3 px-lg-0 row">
+        <div class="col-12 col-xl-8">
+            <div class="flex gap-2 items-start">
+                <a class="text-grey-40 hover:underline text-sm font-normal not-italic min-w-max" href="/">Trang chủ</a>
+                <span class="text-grey-40 text-sm font-normal not-italic capitalize"> / </span>
+                <a class="text-grey-40 hover:underline text-sm font-normal not-italic min-w-max" href="MovieCategory.html">Phim</a>
+                <span class="text-grey-40 text-sm font-normal not-italic capitalize"> / </span>
+                <span class="text-sm font-normal not-italic capitalize">Avengers: Hồi Kết</span>
+            </div>
+            <div>
+                <div class="movie__info row mt-4">
+                    <div class="movie__thumbnail col-md-3 col-12 d-flex justify-content-center align-items-center">
+                        <div class="position-relative">
+                            <img src="https://cdn.galaxycine.vn/media/2019/4/10/406wx600h_1554864308063.jpg" alt="Avengers: Hồi Kết" class="img-fluid w-100 border rounded border-white d-none d-md-block">
+                            <img src="https://cdn.galaxycine.vn/media/2019/4/10/640wx396h_1554864314405.jpg" alt="Avengers: Hồi Kết" class="img-fluid w-100 border rounded border-white d-block d-md-none">
+                            <button id="play-button" class="position-absolute top-50 start-50 translate-middle btn btn-dark rounded-circle" style="width: 68px; height: 68px;">
+                                <i class="fas fa-play fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-12 d-flex flex-column justify-content-start">
+                        <div class="item__title d-flex align-items-center">
+                            <h1 class="h5 font-weight-bold me-3">Avengers: Hồi Kết</h1>
+                            <span class="badge" style="background-color: #ff5733;">T13</span>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <div class="text-muted me-4"><i class="fas fa-clock me-1" style="color: #ff5733;"></i> 182 Phút</div>
+                            <div class="text-muted"><i class="fas fa-calendar-alt me-1" style="color: #ff5733;"></i> 18/04/2019</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-light btn-sm me-2">
+                                <i class="fas fa-eye" ></i> 2602994
+                            </button>
+                            <a href="#" class="fs-5"><i class="fas fa-star me-1" style="color: #ff5733;"></i> 9.0</a>
+                            <span class="text-muted ms-1">(3393 votes)</span>
+                        </div>
+                        <div class="movie-details mt-2">
+                            <div class="mb-2">
+                                <span class="text-muted me-2">Diễn viên:</span>
+                                <a href="#" class="fw-bold me-2">Robert Downey Jr.</a>,
+                                <a href="#" class="fw-bold me-2">Chris Hemsworth</a>,
+                                <a href="#" class="fw-bold me-2">Chris Evans</a>,
+                                <a href="#" class="fw-bold me-2">Scarlett Johansson</a>,
+                                <a href="#" class="fw-bold me-2">Mark Ruffalo</a>,
+                                <a href="#" class="fw-bold me-2">Jeremy Renner</a>,
+                                <a href="#" class="fw-bold">Paul Rudd</a>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted me-2">Nhà sản xuất:</span>
+                                <span class="fw-bold">Walt Disney Studios Motion Pictures</span>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted me-2">Thể loại:</span>
+                                <a href="#" class="fw-bold me-2">Hành động</a>,
+                                <a href="#" class="fw-bold me-2">Phiêu lưu</a>,
+                                <a href="#" class="fw-bold">Giả Tưởng</a>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted me-2">Đạo diễn:</span>
+                                <a href="#" class="fw-bold me-2">Anthony Russo</a>,
+                                <a href="#" class="fw-bold">Joe Russo</a>
+                            </div>
+                            <div>
+                                <span class="text-muted me-2">Quốc gia:</span>
+                                <span class="fw-bold">Mỹ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <div>
+                    <span class="border-start border-4 border-blue-10 me-2"></span>
+                    <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">Nội dung phim</h1>
+                </div>
+                <div class="block__wysiwyg text-secondary text-sm font-normal content-text content__data__full">
+                    <p class="mb-2">
+                        Cú búng tay của Thanos đã khiến toàn bộ dân số biến mất một nửa. Các siêu anh hùng đánh mất bạn bè, người thân và đánh mất cả chính mình. Bộ sáu Avengers đầu tiên tứ tán. Iron Man kẹt lại ngoài không gian, Hawkeye mất tích. Thor, Captain America, Hulk và Black Widow đều chìm trong nỗi đau vô tận vì mất đi những người thân yêu. Họ phải làm gì để cứu vãn mọi chuyện ở 
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Hồi Kết</strong></a>?
+                    </p>
+                    <p class="mb-2">
+                        Điều khán giả quan tâm nhất hiện nay chính là ai sẽ còn sống và ai sẽ ra đi khi 
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Endgame</strong></a> kết thúc. Captain America là người có khả năng ra đi cao nhất khi Chris Evans đã tuyên bố từ bỏ chiếc áo Đại Úy Mỹ. Iron Man Tony Stark - người mở đầu của vũ trụ điện ảnh Marvel cũng có khả năng “bay màu” tương tự. Thor sau tội lỗi “không nhắm vào đầu” cũng thuộc danh sách nguy hiểm. Những người duy nhất chắc chắn còn sống sau 
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Hồi Kết</strong></a> là Nick Fury, Maria Hill và cậu bé Người Nhện Peter Parker.
+                    </p>
+                    <p class="mb-2">
+                        Ngoài ra, vai trò của chị Đại 
+                        <a href="https://www.galaxycine.vn/dat-ve/captain-marvel"><strong>Captain Marvel</strong></a> với sức mạnh khủng khiếp trong câu chuyện này là gì?
+                    </p>
+                    <p class="mb-2">
+                        Câu trả lời sẽ có trong 
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Endgame</strong></a>.
+                    </p>
+                    <p class="mb-2">
+                        Là siêu phẩm được trông đợi nhất 2019, 
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Endgame</strong></a> đã khiến toàn cầu xôn xao khi tung trailer vào 07.12.2018. Chỉ trong vòng 24 giờ, trailer nhận được gần 300 triệu lượt xem và trở thành trailer có lượt xem cao nhất mọi thời đại. Trailer thứ hai cũng phá đảo Internet và chỉ chịu thua trailer trước. Poster 
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Endgame</strong></a> cũng được hưởng ứng mạnh mẽ, khiến cả thế giới phát cuồng. Gần như chắc chắn, 
+                        <strong><a href="https://www.galaxycine.vn/dat-ve/avengers-endgame">Avengers 2019</a></strong> sẽ là bộ phim doanh thu cao nhất năm nay.
+                    </p>
+                    <p class="mb-2">
+                        <a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"><strong>Avengers: Endgame</strong></a> công chiếu 26.04.2019
+                    </p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <div>
+                    <span class="border-start border-4 border-blue-10 me-2"></span>
+                    <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">Hình Trong Phim</h1>
+                </div>
+                <div class="slick-slider center">
+                    <div><img src="https://cdn.galaxycine.vn/media/2019/4/10/avengers1_1554870725200.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2019/4/10/avengers2_1554870729757.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2019/4/10/avengers3_1554870734180.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2019/4/10/avengers4_1554870738662.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2019/4/10/avengers5_1554870743667.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2019/4/10/avengers6_1554870748440.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <div>
+                    <span class="border-start border-4 border-blue-10 me-2"></span>
+                    <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">Diễn Viên</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-2">
+                    <div class="col d-flex">
+                        <a class="d-flex" href="/dien-vien/robert-downey-jr/">
+                            <img alt="Robert Downey Jr." loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/r/o/robert-ngang.jpg">
+                        </a>
+                        <div class="ms-2">
+                            <h6 class="text-dark font-weight-bold"><a href="/dien-vien/robert-downey-jr/">Robert Downey Jr.</a></h6> 
+                            <p class="text-muted small"></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <a class="d-flex" href="/dien-vien/chris-hemsworth/">
+                            <img alt="Chris Hemsworth" loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/2024/5/27/chris-hemsworth-6_1716801447581.jpg">
+                        </a>
+                        <div class="ms-2">
+                            <h6 class="text-dark font-weight-bold"><a href="/dien-vien/chris-hemsworth/">Chris Hemsworth</a></h6>
+                            <p class="text-muted small"></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <a class="d-flex" href="chris-evans.html">
+                            <img alt="Chris Evans" loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/c/h/chris-ngang_1.jpg">
+                        </a>
+                        <div class="ms-2">
+                            <h6 class="text-dark font-weight-bold"><a href="/dien-vien/chris-evans/">Chris Evans</a></h6>
+                            <p class="text-muted small"></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <a class="d-flex" href="/dien-vien/scarlett-johansson/">
+                            <img alt="Scarlett Johansson" loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/s/c/scarlett_johansson.jpg">
+                        </a>
+                        <div class="ms-2">
+                            <h6 class=" text-dark font-weight-bold"><a href="/dien-vien/scarlett-johansson/">Scarlett Johansson</a></h6>
+                            <p class="text-muted small"></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <a class="d-flex" href="/dien-vien/mark-ruffalo/">
+                            <img alt="Mark Ruffalo" loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/6/6_204.jpg">
+                        </a>
+                        <div class="ms-2">
+                            <h6 class="text-dark font-weight-bold"><a href="/dien-vien/mark-ruffalo/">Mark Ruffalo</a></h6>
+                            <p class="text-muted small"></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <a class="d-flex" href="/dien-vien/jeremy-renner/">
+                            <img alt="Jeremy Renner" loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/6/6/6688j.jpg">
+                        </a>
+                        <div class="ms-2">
+                            <h6 class="text-dark font-weight-bold"><a href="/dien-vien/jeremy-renner/">Jeremy Renner</a></h6>
+                            <p class="text-muted small"></p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="mt-4">
+                <div>
+                    <span class="border-start border-4 border-blue-10 me-2"></span>
+                    <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">Bài Viết Liên Quan</h1>
+                </div>
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <div class="col">
+                    <a href="/binh-luan-phim/preview-venom-the-last-dance-sony-co-lay-lai-long-tin-sau-morbius--madame-web/">
+                      <img alt="preview-venom-the-last-dance-sony-co-lay-lai-long-tin-sau-morbius--madame-web" loading="lazy" width="160" height="240" class="img-fluid w-100 rounded" src="https://cdn.galaxycine.vn/media/2024/10/10/venom-the-last-dance-sony-co-lay-lai-long-tin-sau-morbius--madame-web--5_1728533448165.jpg" style="color: transparent;">
+                    </a>
+                    <h6 class="mt-2"><a href="/binh-luan-phim/preview-venom-the-last-dance-sony-co-lay-lai-long-tin-sau-morbius--madame-web/">[Preview] Venom The Last Dance: Sony Có Lấy Lại Lòng Tin Sau Morbius &amp; Madame Web?</a></h6>
+                  </div>
+                  <div class="col">
+                    <a href="/binh-luan-phim/dam-cuoi-xa-hoa---uu-dai-xa-xi-chi-co-o-galaxy-cinema/">
+                      <img alt="dam-cuoi-xa-hoa---uu-dai-xa-xi-chi-co-o-galaxy-cinema" loading="lazy" width="160" height="240" class="img-fluid w-100 rounded" src="https://cdn.galaxycine.vn/media/2024/10/9/dam-cuoi-xa-hoa---uu-dai-xa-xi-chi-co-o-galaxy-cinema-3_1728462270936.jpg" style="color: transparent;">
+                    </a>
+                    <h6 class="mt-2"><a href="/binh-luan-phim/dam-cuoi-xa-hoa---uu-dai-xa-xi-chi-co-o-galaxy-cinema/">Đám Cưới Xa Hoa - Ưu Đãi Xa Xỉ Chỉ Có Ở Galaxy Cinema</a></h6>
+                  </div>
+                  <div class="col">
+                    <a href="/binh-luan-phim/review-joker-folie-a-deux-cu-soc-tu-ga-he-gotham/">
+                      <img alt="review-joker-folie-a-deux-cu-soc-tu-ga-he-gotham" loading="lazy" width="160" height="240" class="img-fluid w-100 rounded" src="https://cdn.galaxycine.vn/media/2024/10/8/review-joker-folie-a-deux-ga-he-hay-hoang-tu-toi-pham-1_1728372164569.jpg" style="color: transparent;">
+                    </a>
+                    <h6 class="mt-2"><a href="/binh-luan-phim/review-joker-folie-a-deux-cu-soc-tu-ga-he-gotham/">[Review] Joker Folie à Deux: Gã Hề Hay Hoàng Tử Tội Phạm?</a></h6>
+                  </div>
+                  <div class="col">
+                    <a href="/binh-luan-phim/review-robot-hoang-da-tinh-cam-ap-am-xuat-phat-tu-may-moc/">
+                      <img alt="review-robot-hoang-da-tinh-cam-ap-am-xuat-phat-tu-may-moc" loading="lazy" width="160" height="240" class="img-fluid w-100 rounded" src="https://cdn.galaxycine.vn/media/2024/10/7/robot-hoang-da-750_1728288003955.jpg" style="color: transparent;">
+                    </a>
+                    <h6 class="mt-2"><a href="/binh-luan-phim/review-robot-hoang-da-tinh-cam-ap-am-xuat-phat-tu-may-moc/">[Review] Robot Hoang Dã: Tình Cảm Ấp Ám Xuất Phát Từ Máy Móc</a></h6>
+                  </div>
+                </div>
+              </div>              
+        </div>
+        </div>
+        <div class="d-none d-xl-block col-xl-4">
+            <div class="card mb-5" style="border: none;">
+                <div class="card-header text-center rounded-top border border-primary" style="background-color: #17297a;">
+                    <h3 class="h5 font-weight-bold text-white py-2">Mua vé nhanh</h3>
+                </div>
+                <div class="card-body d-flex flex-column gap-3 px-3 py-4 bg-light rounded-bottom border">
+                    <div>
+                        <div class="form-group">
+                            <select id="movieSelect" class="form-select text-sm mb-2" aria-label="Chọn phim">
+                                <option selected>Chọn phim</option>
+                                <option value="Cô Dâu Hào Môn">Cô Dâu Hào Môn</option>
+                                <option value="Tee Yod: Quỷ Ăn Tạng Phần 2">Tee Yod: Quỷ Ăn Tạng Phần 2</option>
+                                <option value="Fubao: Bảo Bối Của Ông">Fubao: Bảo Bối Của Ông</option>
+                                <option value="Robot Hoang Dã">Robot Hoang Dã</option>
+                                <option value="Bức Họa Bí Ẩn">Bức Họa Bí Ẩn</option>
+                                <option value="An Lạc">An Lạc</option>
+                                <option value="Tín Hiệu Cầu Cứu">Tín Hiệu Cầu Cứu</option>
+                                <option value="Bóng Đá Nữ Việt Nam: Chuyện Lần Đầu Kể">Bóng Đá Nữ Việt Nam: Chuyện Lần Đầu Kể</option>
+                                <option value="Bóng Ma">Bóng Ma</option>
+                                <option value="Bocchi The Rock! Recap Part 1">Bocchi The Rock! Recap Part 1</option>
+                                <option value="Domino: Lối Thoát Cuối Cùng">Domino: Lối Thoát Cuối Cùng</option>
+                                <option value="Nhất Quỷ Nhì Ma, Thứ Ba Takagi: Trêu Rồi Yêu">Nhất Quỷ Nhì Ma, Thứ Ba Takagi: Trêu Rồi Yêu</option>
+                                <option value="Kumanthong: Chiêu Hồn Vong Nhi">Kumanthong: Chiêu Hồn Vong Nhi</option>
+                                <option value="Mộ Đom Đóm">Mộ Đom Đóm</option>
+                                <option value="Joker: Folie à Deux Điên Có Đôi">Joker: Folie à Deux Điên Có Đôi</option>
+                                <option value="Đố Anh Còng Được Tôi">Đố Anh Còng Được Tôi</option>
+                                <option value="Cám">Cám</option>
+                                <option value="Làm Giàu Với Ma">Làm Giàu Với Ma</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select id="theaterSelect" class="form-select text-sm mb-2" aria-label="Chọn rạp">
+                                <option selected disabled>Chọn rạp</option>
+                                <option value="Galaxy Nguyễn Du">Galaxy Nguyễn Du</option>
+                                <option value="Galaxy Sala">Galaxy Sala</option>
+                                <option value="Galaxy Tân Bình">Galaxy Tân Bình</option>
+                                <option value="Galaxy Kinh Dương Vương">Galaxy Kinh Dương Vương</option>
+                                <option value="Galaxy Quang Trung">Galaxy Quang Trung</option>
+                                <option value="Galaxy Bến Tre">Galaxy Bến Tre</option>
+                                <option value="Galaxy Mipec Long Biên">Galaxy Mipec Long Biên</option>
+                                <option value="Galaxy Đà Nẵng">Galaxy Đà Nẵng</option>
+                                <option value="Galaxy Cà Mau">Galaxy Cà Mau</option>
+                                <option value="Galaxy Trung Chánh">Galaxy Trung Chánh</option>
+                                <option value="Galaxy Huỳnh Tấn Phát">Galaxy Huỳnh Tấn Phát</option>
+                                <option value="Galaxy Vinh">Galaxy Vinh</option>
+                                <option value="Galaxy Hải Phòng">Galaxy Hải Phòng</option>
+                                <option value="Galaxy Nguyễn Văn Quá">Galaxy Nguyễn Văn Quá</option>
+                                <option value="Galaxy Buôn Ma Thuột">Galaxy Buôn Ma Thuột</option>
+                                <option value="Galaxy Long Xuyên">Galaxy Long Xuyên</option>
+                                <option value="Galaxy Co.opXtra Linh Trung">Galaxy Co.opXtra Linh Trung</option>
+                                <option value="Galaxy Nha Trang Center">Galaxy Nha Trang Center</option>
+                                <option value="Galaxy Trường Chinh">Galaxy Trường Chinh</option>
+                                <option value="Galaxy GO! Mall Bà Rịa">Galaxy GO! Mall Bà Rịa</option>
+                                <option value="Galaxy Aeon Huế">Galaxy Aeon Huế</option>
+                                <option value="Galaxy Parc Mall Q8">Galaxy Parc Mall Q8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select id="dateSelect" class="form-select text-sm mb-2" aria-label="Chọn ngày">
+                                <option selected disabled>Chọn ngày</option>
+                                <option value="2024-10-17">thứ năm, 17/10/2024</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>                
+            </div>            
+            <div>
+                <span class="border-start border-4 border-blue-10 me-2"></span>
+                <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">Phim đang chiếu</h1>
+            </div>
+            <div class="movie_content">
+                <ul class="list-unstyled d-flex flex-column">
+                    <li class="transition-all duration-300">
+                        <div class="position-relative w-100 max-w-400">
+                            <div class="card rounded overflow-hidden cursor-pointer">
+                                <div class="position-relative">
+                                    <img src="https://cdn.galaxycine.vn/media/2024/10/1/my-dearest-fubao-2_1727752835864.jpg" alt="my-dearest-fubao" class="img-fluid rounded">
+                                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none d-md-flex align-items-center justify-content-center transition-opacity">
+                                        <a type="button" class="muave-button text-white w-30 text-center rounded text-sm px-4 py-2" style="background-color: #ff5733;">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7222 6.33333H5.27778C4.81753 6.33333 4.44444 6.70642 4.44444 7.16667V12.1667C4.44444 12.6269 4.81753 13 5.27778 13H14.7222C15.1825 13 15.5556 12.6269 15.5556 12.1667V7.16667C15.5556 6.70642 15.1825 6.33333 14.7222 6.33333ZM14.4444 11.8889H5.55556V7.44444H14.4444V11.8889ZM18.8889 8.55556H20V4.66667C20 3.74618 19.2538 3 18.3333 3H1.66667C0.746181 3 0 3.74618 0 4.66667V8.55556H1.11111C1.72476 8.55556 2.22222 9.05302 2.22222 9.66667C2.22222 10.2803 1.72476 10.7778 1.11111 10.7778H0V14.6667C0 15.5872 0.746181 16.3333 1.66667 16.3333H18.3333C19.2538 16.3333 20 15.5872 20 14.6667V10.7778H18.8889C18.2752 10.7778 17.7778 10.2803 17.7778 9.66667C17.7778 9.05302 18.2752 8.55556 18.8889 8.55556ZM18.8889 11.8889V14.6667C18.8889 14.973 18.6397 15.2222 18.3333 15.2222H1.66667C1.36031 15.2222 1.11111 14.973 1.11111 14.6667V11.8889C2.33646 11.8889 3.33333 10.892 3.33333 9.66667C3.33333 8.44132 2.33646 7.44444 1.11111 7.44444V4.66667C1.11111 4.36031 1.36031 4.11111 1.66667 4.11111H18.3333C18.6397 4.11111 18.8889 4.36031 18.8889 4.66667V7.44444C17.6635 7.44444 16.6667 8.44132 16.6667 9.66667C16.6667 10.892 17.6635 11.8889 18.8889 11.8889Z" fill="white"/>
+                                            </svg>
+                                            Mua vé
+                                        </a>
+                                    </div>
+                                    <div class="votes position-absolute bottom-0 end-0 p-2">
+                                        <p class="mb-4">
+                                            <span>
+                                                <i class="fas fa-star text-warning me-1"></i>
+                                            </span>
+                                            <span class="fw-bold text-white fs-6">7.9</span>
+                                        </p>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3"> 
+                                <a class="text-sm font-semibold d-block" href="/dat-ve/my-dearest-fubao/">Fubao: Bảo Bối Của Ông</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="transition-all duration-300">
+                        <div class="position-relative w-100 max-w-400">
+                            <div class="card rounded overflow-hidden cursor-pointer">
+                                <div class="position-relative">
+                                    <img src="https://cdn.galaxycine.vn/media/2024/10/9/co-dau-hao-mon-2_1728456490910.jpg" alt="co-dau-hao-mon" class="img-fluid rounded">
+                                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none d-md-flex align-items-center justify-content-center transition-opacity">
+                                        <a type="button" class="muave-button text-white w-30 text-center rounded text-sm px-4 py-2" style="background-color: #ff5733;">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7222 6.33333H5.27778C4.81753 6.33333 4.44444 6.70642 4.44444 7.16667V12.1667C4.44444 12.6269 4.81753 13 5.27778 13H14.7222C15.1825 13 15.5556 12.6269 15.5556 12.1667V7.16667C15.5556 6.70642 15.1825 6.33333 14.7222 6.33333ZM14.4444 11.8889H5.55556V7.44444H14.4444V11.8889ZM18.8889 8.55556H20V4.66667C20 3.74618 19.2538 3 18.3333 3H1.66667C0.746181 3 0 3.74618 0 4.66667V8.55556H1.11111C1.72476 8.55556 2.22222 9.05302 2.22222 9.66667C2.22222 10.2803 1.72476 10.7778 1.11111 10.7778H0V14.6667C0 15.5872 0.746181 16.3333 1.66667 16.3333H18.3333C19.2538 16.3333 20 15.5872 20 14.6667V10.7778H18.8889C18.2752 10.7778 17.7778 10.2803 17.7778 9.66667C17.7778 9.05302 18.2752 8.55556 18.8889 8.55556ZM18.8889 11.8889V14.6667C18.8889 14.973 18.6397 15.2222 18.3333 15.2222H1.66667C1.36031 15.2222 1.11111 14.973 1.11111 14.6667V11.8889C2.33646 11.8889 3.33333 10.892 3.33333 9.66667C3.33333 8.44132 2.33646 7.44444 1.11111 7.44444V4.66667C1.11111 4.36031 1.36031 4.11111 1.66667 4.11111H18.3333C18.6397 4.11111 18.8889 4.36031 18.8889 4.66667V7.44444C17.6635 7.44444 16.6667 8.44132 16.6667 9.66667C16.6667 10.892 17.6635 11.8889 18.8889 11.8889Z" fill="white"/>
+                                            </svg>
+                                            Mua vé
+                                        </a>
+                                    </div>
+                                    <div class="votes position-absolute bottom-0 end-0 p-2">
+                                        <p class="mb-4">
+                                            <span>
+                                                <i class="fas fa-star text-warning me-1"></i>
+                                            </span>
+                                            <span class="fw-bold text-white fs-6">8.1</span>
+                                        </p>
+                                    </div>
+                                    <div class="age__limit position-absolute bottom-0 end-0 p-2">
+                                        <span class="badge bg-orange-10 text-white">T18</span>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3"> 
+                                <a class="text-sm font-semibold d-block" href="/dat-ve/co-dau-hao-mon/">Cô Dâu Hào Môn</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="transition-all duration-300">
+                        <div class="position-relative w-100 max-w-400">
+                            <div class="card rounded overflow-hidden cursor-pointer">
+                                <div class="position-relative">
+                                    <img src="https://cdn.galaxycine.vn/media/2024/10/7/bocchi-the-rock-recap-part-1-2_1728269976716.jpg" alt="bocchi-the-rock-recap-part-1" class="img-fluid rounded">
+                                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none d-md-flex align-items-center justify-content-center transition-opacity">
+                                        <a type="button" class="muave-button text-white w-30 text-center rounded text-sm px-4 py-2" style="background-color: #ff5733;">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7222 6.33333H5.27778C4.81753 6.33333 4.44444 6.70642 4.44444 7.16667V12.1667C4.44444 12.6269 4.81753 13 5.27778 13H14.7222C15.1825 13 15.5556 12.6269 15.5556 12.1667V7.16667C15.5556 6.70642 15.1825 6.33333 14.7222 6.33333ZM14.4444 11.8889H5.55556V7.44444H14.4444V11.8889ZM18.8889 8.55556H20V4.66667C20 3.74618 19.2538 3 18.3333 3H1.66667C0.746181 3 0 3.74618 0 4.66667V8.55556H1.11111C1.72476 8.55556 2.22222 9.05302 2.22222 9.66667C2.22222 10.2803 1.72476 10.7778 1.11111 10.7778H0V14.6667C0 15.5872 0.746181 16.3333 1.66667 16.3333H18.3333C19.2538 16.3333 20 15.5872 20 14.6667V10.7778H18.8889C18.2752 10.7778 17.7778 10.2803 17.7778 9.66667C17.7778 9.05302 18.2752 8.55556 18.8889 8.55556ZM18.8889 11.8889V14.6667C18.8889 14.973 18.6397 15.2222 18.3333 15.2222H1.66667C1.36031 15.2222 1.11111 14.973 1.11111 14.6667V11.8889C2.33646 11.8889 3.33333 10.892 3.33333 9.66667C3.33333 8.44132 2.33646 7.44444 1.11111 7.44444V4.66667C1.11111 4.36031 1.36031 4.11111 1.66667 4.11111H18.3333C18.6397 4.11111 18.8889 4.36031 18.8889 4.66667V7.44444C17.6635 7.44444 16.6667 8.44132 16.6667 9.66667C16.6667 10.892 17.6635 11.8889 18.8889 11.8889Z" fill="white"/>
+                                            </svg>
+                                            Mua vé
+                                        </a>
+                                    </div>
+                                    <div class="votes position-absolute bottom-0 end-0 p-2">
+                                        <p class="mb-4">
+                                            <span>
+                                                <i class="fas fa-star text-warning me-1"></i>
+                                            </span>
+                                            <span class="fw-bold text-white fs-6">8.5</span>
+                                        </p>
+                                    </div>
+                                    <div class="age__limit position-absolute bottom-0 end-0 p-2">
+                                        <span class="badge bg-orange-10 text-white">T18</span>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3"> 
+                                <a class="text-sm font-semibold d-block" href="/dat-ve/bocchi-the-rock-recap-part-1/">Bocchi The Rock: Recap Part 1</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-end">
+                    <a type="button" class="btn btn-outline-warning textend-btn text-[#ff5733] hover:bg-warning hover:text-white transition-all duration-300 focus:ring-1 focus:outline-none focus:ring-warning rounded text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2" href="/phim-dang-chieu/">
+                        Xem thêm
+                        <i class="fas fa-angle-right ml-2"></i>
+                    </a>
+                </div>                                          
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $('.slick-slider').slick({
+        centerMode: true,       // Enable center mode (optional)
+        slidesToShow: 3,        // Set the number of images to show in one row
+        slidesToScroll: 1,      // Number of slides to scroll at a time
+        autoplay: true,         // Enable autoplay
+        autoplaySpeed: 2000,    // Speed of autoplay
+        infinite: true,         // Infinite scroll
+        arrows: true,           // Show navigation arrows
+        dots: true,             // Show navigation dots
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const playButton = document.getElementById('play-button');
+            const trailerWrapper = document.getElementById('trailer-wrapper');
+            playButton.addEventListener('click', function() {
+                trailerWrapper.style.display = 'flex';
+            });
+            trailerWrapper.addEventListener('click', function(event) {
+                if (event.target === trailerWrapper) {
+                    trailerWrapper.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <footer>
+        <p>&copy; </p>
+    </footer>
+</body>
+</html>

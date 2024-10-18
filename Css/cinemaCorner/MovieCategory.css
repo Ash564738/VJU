@@ -74,3 +74,6 @@ a{
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.774);
 }
+.fa-solid, .fas{
+    font-size: 1em;
+}

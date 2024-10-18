@@ -142,6 +142,9 @@ nav a {
     height: 45%;
     background-color: #034EA2;
 }
+.fa-solid, .fas{
+    font-size: 1em !important;
+}
 @media (max-width: 768px) {
 .nav-link, nav li .submit-btn {
     font-size: 12px;

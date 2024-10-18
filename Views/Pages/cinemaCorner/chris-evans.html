@@ -100,8 +100,8 @@
             <div>
                 <div class="movie__info row mt-4">
                     <div class="movie__thumbnail col-md-3 col-12 d-flex justify-content-center align-items-center">
-                        <div class="position-relative">
-                            <img src="https://cdn.galaxycine.vn/media/1/8/18186819528_ce5cc34da2_o.jpg" alt="Chris Evans" class="img-fluid w-1000 border rounded border-white d-none d-md-block">
+                        <div class="position-relative" style="object-fit: cover; height: 100%;">
+                            <img src="https://cdn.galaxycine.vn/media/1/8/18186819528_ce5cc34da2_o.jpg" alt="Chris Evans" class="img-fluid w-100 h-100 border rounded border-white d-flex" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-md-9 col-12 d-flex flex-column justify-content-start">
@@ -113,7 +113,7 @@
                                 <i class="fas fa-thumbs-up"></i> Thích
                             </button>
                             <button type="button" class="btn btn-primary btn-sm me-2">
-                                <i class="fas fa-thumbs-up"></i> Chia sẻ
+                                <i class="fas fa-share"></i> Chia sẻ
                             </button>
                             <button class="btn btn-secondary btn-sm me-2">
                                 <i class="fas fa-eye"></i> 148210
@@ -125,7 +125,7 @@
                                     <span><strong><i>Khác với Chris Hemsworth vẫn đang loay hoay trong hình tượng vị thần sấm sét, đa số người hâm mộ vẫn nhìn nhận rõ ràng, Chris Evans và Captain America là hai con người hoàn toàn khác nhau</i></strong><a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"></a></span>
                                 </p>
                             </div>
-                        </div></br>
+                        </div>
                         <div class="movie-details mt-2">
                             <div class="mb-2">
                                 <span class="text-muted me-2">Ngày sinh:</span>
@@ -148,11 +148,11 @@
                     <span class="border-start border-4 border-blue-10 me-2"></span>
                     <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">Hình Ảnh</h1>
                 </div>
-                <div class="slick-slider center">
-                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/chris-evans-1_1591258719251.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
-                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/unnamed_1591258727055.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
-                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/original_1591258955288.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
-                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/1489517701-esq040117chrisevans004_1591258962286.jpg" class="img-fluid rounded w-10 h-auto object-cover"></div>
+                <div class="slick-slider center" style="max-height: 40vh;">
+                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/chris-evans-1_1591258719251.jpg" class="img-fluid rounded w-80 h-auto object-cover" style="max-height: 40vh;"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/unnamed_1591258727055.jpg" class="img-fluid rounded w-80 h-auto object-cover" style="max-height: 40vh;"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/original_1591258955288.jpg" class="img-fluid rounded w-80 h-auto object-cover" style="max-height: 40vh;"></div>
+                    <div><img src="https://cdn.galaxycine.vn/media/2020/6/4/1489517701-esq040117chrisevans004_1591258962286.jpg" class="img-fluid rounded w-80 h-auto object-cover" style="max-height: 40vh;"></div>
                 </div>
             </div>
             <div class="mt-4">
@@ -163,7 +163,7 @@
                 <div class="row row-cols-1 row-cols-md-2 g-2">
                     <div class="col d-flex">
                         <a class="d-flex" href="/phim/captain-america/">
-                            <img alt="Captain America: Chiến Binh Mùa Đông " loading="lazy" width="150" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/2023/6/13/captain-america-the-winter-soldier-2_1686628675212.jpg">
+                            <img alt="Captain America: Chiến Binh Mùa Đông " loading="lazy" width="150" height="85" class="rounded" src="https://cdn.galaxycine.vn/media/2023/6/13/captain-america-the-winter-soldier-2_1686628675212.jpg">
                         </a>
                         <div class="ms-2">
                             <h6 class="text-uppercase"><a href="/phim/captain-america/">Captain America: Chiến binh mùa đông</a></h6> 
@@ -172,7 +172,7 @@
                     </div>
                     <div class="col d-flex">
                         <a class="d-flex" href="/phim/red-one/">
-                            <img alt="Red One" loading="lazy" width="122" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/2024/10/3/red-one-750_1727937161841.jpg">
+                            <img alt="Red One" loading="lazy" width="150" height="85" class="rounded" src="https://cdn.galaxycine.vn/media/2024/10/3/red-one-750_1727937161841.jpg">
                         </a>
                         <div class="ms-2">
                             <h6 class="text-dark"><a href="/phim/red-one/">Red One</a></h6> 
@@ -181,7 +181,7 @@
                     </div>
                     <div class="col d-flex">
                         <a class="d-flex" href="/phim/captain-america-noi-chien-sieu-anh-hung/">
-                            <img alt="Captain America: Nội Chiến Siêu Anh Hùng" loading="lazy" width="160" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/c/i/civil-ngang.jpg">
+                            <img alt="Captain America: Nội Chiến Siêu Anh Hùng" loading="lazy" width="150" height="85" class="rounded" src="https://cdn.galaxycine.vn/media/c/i/civil-ngang.jpg">
                         </a>
                         <div class="ms-2">
                             <h6 class="text-uppercase"><a href="/phim/captain-america-noi-chien-sieu-anh-hung/">Captain America: Nội chiến siêu anh hùng</a></h6> 
@@ -190,7 +190,7 @@
                     </div>
                     <div class="col d-flex">
                         <a class="d-flex" href="/phim/lightyear/">
-                            <img alt="Lightyear" loading="lazy" width="130" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/2022/6/1/1350x900_1654069539480.jpg">
+                            <img alt="Lightyear" loading="lazy" width="150" height="85" class="rounded" src="https://cdn.galaxycine.vn/media/2022/6/1/1350x900_1654069539480.jpg">
                         </a>
                         <div class="ms-2">
                             <h6 class="text-dark"><a href="/phim/lightyear/">Lightyear</a></h6> 
@@ -199,7 +199,7 @@
                     </div>
                     <div class="col d-flex">
                         <a class="d-flex" href="/phim/knives-out/">
-                            <img alt="Knives Out" loading="lazy" width="130" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/2022/1/17/merlin-164868219-e562b574-9e9a-4dfa-8dd3-4f0f785412f0-articlelarge_1642385191550.jpg">
+                            <img alt="Knives Out" loading="lazy" width="150" height="85" class="rounded" src="https://cdn.galaxycine.vn/media/2022/1/17/merlin-164868219-e562b574-9e9a-4dfa-8dd3-4f0f785412f0-articlelarge_1642385191550.jpg">
                         </a>
                         <div class="ms-2">
                             <h6 class="text-dark"><a href="/phim/knives-out/">Knives out</a></h6> 
@@ -208,7 +208,7 @@
                     </div>
                     <div class="col d-flex">
                         <a class="d-flex" href="/phim/avengers-endgame/">
-                            <img alt="Avengers: Endgame" loading="lazy" width="130" height="85" class="rounded img-fluid" src="https://cdn.galaxycine.vn/media/2019/4/10/640wx396h_1554864314405.jpg">
+                            <img alt="Avengers: Endgame" loading="lazy" width="150" height="85" class="rounded" src="https://cdn.galaxycine.vn/media/2019/4/10/640wx396h_1554864314405.jpg">
                         </a>
                         <div class="ms-2">
                             <h6 class="text-dark"><a href="/phim/avengers-endgame/">Avengers: Endgame</a></h6> 
@@ -222,7 +222,7 @@
                     <span class="border-start border-4 border-blue-10 me-2"></span>
                     <h1 class="mb-4 text-uppercase fs-5 fw-medium d-inline-block">tiểu sử</h1>
                 </div>
-                <div class="block__wysiwyg text-secondary text-sm font-normal content-text content__data__full">
+                <div class="block__wysiwyg text-secondary text-sm font-normal content-text content__data__full" style="font-size: 0.7em;">
                     <p class="mb-2">
                         <strong><i>Khác với Chris Hemsworth vẫn đang loay hoay trong hình tượng vị thần sấm sét, đa số người hâm mộ vẫn nhìn nhận rõ ràng, Chris Evans và Captain America là hai con người hoàn toàn khác nhau.</i></strong>
                     </p>

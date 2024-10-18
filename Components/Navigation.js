@@ -1,3 +1,6 @@
+export {
+    getHtmlData
+}
 const NAVIGATION_FILE_PATH = '/nav.html'
 const NAVIGATION_STYLE_PATH = '/nav.css'
 
@@ -12,7 +15,7 @@ const getHtmlData = async (filePath) => {
         })
         .then(data => {
             returnData = data
-            console.log(data)
+            // console.log(data)
         })
         .catch(error => {
             console.error('Lỗi khi tải file HTML:', error);
@@ -36,10 +39,10 @@ const insertNavigationBar = async () => {
         let parsedSvg = parser.parseFromString(svgString,'image/svg+xml')
         svgTag.replaceWith(parsedSvg.documentElement)
     }
-    console.log(doc)
+    // console.log(doc)
 
     document.body.insertBefore(doc.getElementsByTagName('header').item(0),document.body.firstChild)
     
-}   
+}
 
 insertNavigationBar()

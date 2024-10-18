@@ -9,7 +9,6 @@ a{
     border-color: #1b1a81 !important;
 }
 
-
 .card {
     position: relative;
 }
@@ -65,6 +64,7 @@ a{
     color: grey;
 }
 .trailer__wrapper {
+    display: none;
     z-index: 100;
     position: fixed;
     width: 100vw;

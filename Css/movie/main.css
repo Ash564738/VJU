@@ -55,33 +55,6 @@ nav li .submit-btn {
     outline: none;
     font-weight: bold;
 }
-/* nav li input{
-    display:block;
-    color: #034EA2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: inherit;
-    outline: none;
-    position: relative;
-}
-nav li input::before{
-    content: '';
-    background-image: url('/image/location.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-} */
 nav li .submit-btn {
     display: flex;
     align-items: center;
@@ -95,7 +68,6 @@ nav li .submit-btn {
     outline: none;
     font-weight:600;
 }
-
 nav li .submit-btn i {
     margin-right: 8px;
 }
@@ -141,9 +113,6 @@ nav a {
     width: 5px;
     height: 45%;
     background-color: #034EA2;
-}
-.fa-solid, .fas{
-    font-size: 1em !important;
 }
 @media (max-width: 768px) {
 .nav-link, nav li .submit-btn {

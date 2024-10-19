@@ -2,13 +2,6 @@ a{
     text-decoration: none;
     color: black;
 }
-.bg-orange-10{
-    background-color: #ff5733;
-}
-.border-blue-10{
-    border-color: #1b1a81 !important;
-}
-
 .card {
     position: relative;
 }
@@ -73,7 +66,4 @@ a{
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.774);
-}
-.fa-solid, .fas{
-    font-size: 1em;
 }

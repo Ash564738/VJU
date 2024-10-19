@@ -119,7 +119,7 @@ p{
     font-weight: bold;
 }
 
-.overlay {
+.video-overlay {
     display: none;
     position: fixed; /* Cover entire screen */
     top: 0;

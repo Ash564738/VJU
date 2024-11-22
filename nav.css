@@ -10,6 +10,7 @@
 dl, ol, ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 .line-default{
     display: block;
@@ -17,7 +18,7 @@ dl, ol, ul {
     transform: matrix(1,0,0,-1,0,0);
 }
 header {
-    padding: 2vh 8vw;
+    padding: 2vh 5vw;
     transition: all 0.4s ease;
     background: none;
 }
@@ -27,10 +28,12 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 .nav-content .nav-links {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 .nav-content .logo a img {
     width: 10w;
@@ -38,7 +41,6 @@ header {
 }
 .nav-content .nav-links li {
     list-style: none;
-    margin: 0 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +89,6 @@ header {
     top: 100%;
     background-color: #fff;
     list-style: none;
-    padding: 10px 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     z-index: 100;
@@ -95,10 +96,8 @@ header {
 .nav-links .dropdown:hover .dropdown-menu{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .nav-links .dropdown-menu li {
-    width: 100%;
     text-align: center;
     align-self: center;
 }
@@ -131,7 +130,9 @@ header {
 
 .nav-links .container {
     position: relative;
-    width: fit-content;
+    width: 250px;
+    padding: 0;
+    margin: 0;
 }
 .nav-links .mainbox {
     position: relative;
@@ -176,8 +177,6 @@ header {
     background-color: transparent;
     border: none;
     outline: none;
-    padding-bottom: 4px;
-    padding-left: 10px;
     font-size: 1em;
     color: rgb(0, 0, 0);
     transition: all 0.3s ease;

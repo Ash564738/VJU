@@ -1,0 +1,37 @@
+.card {
+    position: relative;
+}
+.overlay {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover .overlay {
+    opacity: 1;
+    display: flex;
+}
+.muave-button:hover {
+    background: linear-gradient(to right, #FC4100, #FFC55A);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.textend-btn {
+    color: #ff5733;
+    border-color: #ff5733;
+}
+.textend-btn:hover {
+    background-color: #ff5733;
+    color: white;
+}
+
+.custom-badge {
+    background-color: white; /* Set background to white */
+    border: 1px solid grey; /* Grey border */
+    color: #333; /* Text color */
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth hover transition */
+}
+
+.custom-badge:hover {
+    border-color: #ff5733; /* Change border to orange on hover */
+}

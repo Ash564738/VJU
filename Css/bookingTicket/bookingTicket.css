@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+.Step-bar {
+    background-color: aqua;
+    height: 200px;
+}
+
+.Step-bar__test-component {
+    background-color: brown;
+    height: 100px;
+}
+
+    
+@media screen and (min-width: 364px) {
+    .Progress-container__progress-button {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .Progress-container__progress-button {
+        font-size: 1.0rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Progress-container__progress-button {
+        font-size: 1.0rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Progress-container__progress-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Progress-container__progress-button {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .Progress-container__progress-button {
+        font-size: 1.0rem;
+    }
+}
+
+
+
+

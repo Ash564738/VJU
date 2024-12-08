@@ -2,13 +2,6 @@ a{
     text-decoration: none;
     color: black;
 }
-.bg-orange-10{
-    background-color: #ff5733;
-}
-.border-blue-10{
-    border-color: #1b1a81 !important;
-}
-
 .card {
     position: relative;
 }

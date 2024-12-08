@@ -1,0 +1,11 @@
+.carousel-image-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.carousel-image-wrapper img{
+    width: 90%;
+    object-fit: cover;
+}
+.bg-orange-10 {
+    background-color: #ff5921 !important;  /* Replace with your desired color */
+}

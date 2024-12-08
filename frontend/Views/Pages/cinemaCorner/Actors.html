@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách diễn viên</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/Css/cinemaCorner/MovieCategory.css">
+    <link rel="stylesheet" href="../../../footer.css">
+</head>
+<body>
+    <main class="container-lg my-0 mx-auto py-4 px-3 px-lg-0 row">
+        <div class="col-12 col-xl-8">
+            <div class="border-bottom border-blue-10">
+                <span class="border-start border-4 border-blue-10 me-2"></span>
+                <h1 class="mb-4 text-uppercase fs-6 fw-medium d-inline-block">Diễn Viên</h1>
+                <button class="d-md-none mb-4 w-100 border border-secondary rounded bg-white h-100 fw-semibold text-sm text-dark transition-all duration-300 focus:outline-none focus:bg-transparent text-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sliders" class="svg-inline--fa fa-sliders me-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1em; height: 1em;">
+                        <path fill="currentColor" d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"></path>
+                    </svg>
+                    Phân loại / Lọc
+                </button>
+                <div class="d-none d-md-flex pb-4 row row-cols-5 g-2">
+                    <div class="col">
+                        <select class="form-select form-select-sm w-100" aria-label="Quốc gia">
+                            <option selected>Quốc gia</option>
+                            <option value="india">Ấn Độ</option>
+                            <option value="uk">Anh</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="belgium">Bỉ</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="cambodia">Campuchia</option>
+                            <option value="canada">Canada</option>
+                            <option value="taiwan">Đài Loan</option>
+                            <option value="denmark">Đan Mạch</option>
+                            <option value="vietnam">Việt Nam</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col">
+                        <select class="form-select form-select-sm w-100" aria-label="Xem nhiều nhất">
+                            <option selected>Xem nhiều nhất</option>
+                            <option value="most_recent">Mới Nhất</option>
+                            <option value="highest_rated">Đánh Giá Tốt Nhất</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4">
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="chris-evans.html">
+                                <img alt="Chris Evans" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/c/h/chris-ngang_1.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="chris-evans.html"><strong>Chris Evans</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 148210
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>Khác với Chris Hemsworth vẫn đang loay hoay trong hình tượng vị thần sấm sét, đa số người hâm mộ vẫn nhìn nhận rõ ràng, Chris Evans và Captain America là hai con người hoàn toàn khác nhau<a href="https://www.galaxycine.vn/dat-ve/avengers-endgame"></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/margotRobbie/">
+                                <img alt="Margot Robbie" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/g/a/gallery-1436740108-elle-aug-15-margot-robbie-02.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/margotRobbie/"><strong>Margot Robbie</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 128538
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>Dĩ nhiên, có nhan sắc chẳng bao giờ là đủ để đảm bảo cho chiếc vé thành công tại Hollywood, Margot còn phải cố gắng nhiều. Nhưng ta biết, hiện nay nàng xứng đáng được coi là minh tinh hạng A!</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/charlizeTheron/">
+                                <img alt="Charlize Theron" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/t/h/theron-charlize-bannner.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/charlizeTheron/"><strong>Charlize Theron</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                <button type="button" class="btn btn-primary btn-sm me-2">
+                                    <i class="fas fa-thumbs-up"></i> Thích
+                                </button>
+                                <button class="btn btn-secondary btn-sm me-2">
+                                    <i class="fas fa-eye"></i> 103797
+                                </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        Bắt đầu từ vai diễn không có lời thoại, chỉ xuất hiện 3 giây trong một bộ phim hạng B, Charlize Theron nay đã trở thành nữ thần của Hollywood.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/hugh-jackman/">
+                                <img alt="Hugh Jackman" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/h/u/hu-ngang.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/hugh-jackman/"><strong>Hugh Jackman</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 98076
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>Ngoài gương mặt đẹp trai, thân hình rắn chắc và số tài lẻ không đếm nổi, Hugh Jackman còn có một niềm tự hào mà khó minh tinh Hollywood nào không ganh tị.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/robert-downey/">
+                                <img alt="Robert Downey Jr." class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/r/o/robert-ngang.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/robert-downey/"><strong>Robert Downey Jr.</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 95223
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>Thành công lớn ở giai đoạn đầu sự nghiệp nhưng nghiện ngập từ bé, có phim kiếm cả tỉ đôla lại từng lang thang không xu dính túi, 2 lần đề cử Oscar đi kèm với những lần vào tù ra khám… Nếu phải chọn cuộc đời một ngôi sao để viết kịch bản phim, thì “cuộc đời của Robert </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/jennifer-lawrence/">
+                                <img alt="Jennifer Lawrence" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/l/a/la-ngang_1.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/jennifer-lawrence/"><strong>Jennifer Lawrence</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 86712
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>
+                                            Sẽ rất lâu rất lâu nữa, nước Mỹ mới sinh ra một cô gái hội đủ cả nhan sắc, tài năng, cá tính và được thần may mắn chiếu cố như Jennifer Lawrence.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/dwayne-johnson/">
+                                <img alt="Dwayne Johnson" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/3/3_204.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/dwayne-johnson/"><strong>Dwayne Johnson</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 84680
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>
+                                            Có nhiều biệt danh như The People's Champion, The Brahma Bull, The Great One… nhưng người ta thường nhớ đến Dwayne Johnson với cái tên The Rock.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>      
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/scartlett-johansson/">
+                                <img alt="Scartlett Johansson" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/s/c/scarlett_johansson.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/scartlett-johansson/"><strong>Scartlett Johansson</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 61125
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>
+                                            Nếu phải chọn ra một nữ diễn viên thành công nhất đầu thế kỷ 21 ở Hollywood, nhiều người sẽ không ngần ngại gọi tên Scartlett Johansson. Ở tuổi 36, “biểu tượng Sex” thời hiện đại của Kinh đô Ánh sáng đã đạt được gần như mọi danh vọng, tiền tài, và vị thế nhiều </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="mb-2">
+                        <section class="d-flex gap-2 gap-md-4">
+                            <a class="w-auto w-md-25" href="/dienvien/ryan-reynolds/">
+                                <img alt="Ryan Reynolds" class="rounded img-fluid" style="width: 90vw; height: 25vh; max-width: 300px; object-fit: cover;" src="https://cdn.galaxycine.vn/media/r/y/ryan%20reynolds-ngang.jpg">
+                            </a>
+                            <div class="flex-grow-1">
+                                <a class="text-dark text-sm text-md-dark font-weight-bold" href="/dienvien/ryan-reynolds/"><strong>Ryan Reynolds</strong></a>
+                                <div class="d-flex align-items-center my-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-thumbs-up"></i> Thích
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm me-2">
+                                        <i class="fas fa-eye"></i> 51255
+                                    </button>
+                                </div>
+                                <div class="wysiwyg text-muted mt-2 d-none d-md-block">
+                                    <p style="font-size: 0.8rem;">
+                                        <span>
+                                            Được xem là “ca khó” của Hollywood trong một thời gian dài, Ryan Reynolds rốt cuộc cũng đã bước vào danh sách hạng A với Deadpool, bộ phim siêu anh hùng phá cách năm 2016.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>                                   
+                </ul>
+            </div>
+            <div class="block md:block mt-8">
+                <ul class="pagination justify-content-center gap-2 cursor-pointer">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                        <i class="fas fa-angles-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                        <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link active" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link">…</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">151</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                        <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                        <i class="fas fa-angles-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-none d-xl-block col-xl-4">
+            <div class="card mb-5" style="border: none;">
+                <div class="card-header text-center rounded-top border border-primary" style="background-color: #17297a;">
+                    <h3 class="h5 font-weight-bold text-white py-2">Mua vé nhanh</h3>
+                </div>
+                <div class="card-body d-flex flex-column gap-3 px-3 py-4 bg-light rounded-bottom border">
+                    <div>
+                        <div class="form-group">
+                            <select id="movieSelect" class="form-select text-sm mb-2" aria-label="Chọn phim">
+                                <option selected>Chọn phim</option>
+                                <option value="Cô Dâu Hào Môn">Cô Dâu Hào Môn</option>
+                                <option value="Tee Yod: Quỷ Ăn Tạng Phần 2">Tee Yod: Quỷ Ăn Tạng Phần 2</option>
+                                <option value="Fubao: Bảo Bối Của Ông">Fubao: Bảo Bối Của Ông</option>
+                                <option value="Robot Hoang Dã">Robot Hoang Dã</option>
+                                <option value="Bức Họa Bí Ẩn">Bức Họa Bí Ẩn</option>
+                                <option value="An Lạc">An Lạc</option>
+                                <option value="Tín Hiệu Cầu Cứu">Tín Hiệu Cầu Cứu</option>
+                                <option value="Bóng Đá Nữ Việt Nam: Chuyện Lần Đầu Kể">Bóng Đá Nữ Việt Nam: Chuyện Lần Đầu Kể</option>
+                                <option value="Bóng Ma">Bóng Ma</option>
+                                <option value="Bocchi The Rock! Recap Part 1">Bocchi The Rock! Recap Part 1</option>
+                                <option value="Domino: Lối Thoát Cuối Cùng">Domino: Lối Thoát Cuối Cùng</option>
+                                <option value="Nhất Quỷ Nhì Ma, Thứ Ba Takagi: Trêu Rồi Yêu">Nhất Quỷ Nhì Ma, Thứ Ba Takagi: Trêu Rồi Yêu</option>
+                                <option value="Kumanthong: Chiêu Hồn Vong Nhi">Kumanthong: Chiêu Hồn Vong Nhi</option>
+                                <option value="Mộ Đom Đóm">Mộ Đom Đóm</option>
+                                <option value="Joker: Folie à Deux Điên Có Đôi">Joker: Folie à Deux Điên Có Đôi</option>
+                                <option value="Đố Anh Còng Được Tôi">Đố Anh Còng Được Tôi</option>
+                                <option value="Cám">Cám</option>
+                                <option value="Làm Giàu Với Ma">Làm Giàu Với Ma</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select id="theaterSelect" class="form-select text-sm mb-2" aria-label="Chọn rạp">
+                                <option selected disabled>Chọn rạp</option>
+                                <option value="Galaxy Nguyễn Du">Galaxy Nguyễn Du</option>
+                                <option value="Galaxy Sala">Galaxy Sala</option>
+                                <option value="Galaxy Tân Bình">Galaxy Tân Bình</option>
+                                <option value="Galaxy Kinh Dương Vương">Galaxy Kinh Dương Vương</option>
+                                <option value="Galaxy Quang Trung">Galaxy Quang Trung</option>
+                                <option value="Galaxy Bến Tre">Galaxy Bến Tre</option>
+                                <option value="Galaxy Mipec Long Biên">Galaxy Mipec Long Biên</option>
+                                <option value="Galaxy Đà Nẵng">Galaxy Đà Nẵng</option>
+                                <option value="Galaxy Cà Mau">Galaxy Cà Mau</option>
+                                <option value="Galaxy Trung Chánh">Galaxy Trung Chánh</option>
+                                <option value="Galaxy Huỳnh Tấn Phát">Galaxy Huỳnh Tấn Phát</option>
+                                <option value="Galaxy Vinh">Galaxy Vinh</option>
+                                <option value="Galaxy Hải Phòng">Galaxy Hải Phòng</option>
+                                <option value="Galaxy Nguyễn Văn Quá">Galaxy Nguyễn Văn Quá</option>
+                                <option value="Galaxy Buôn Ma Thuột">Galaxy Buôn Ma Thuột</option>
+                                <option value="Galaxy Long Xuyên">Galaxy Long Xuyên</option>
+                                <option value="Galaxy Co.opXtra Linh Trung">Galaxy Co.opXtra Linh Trung</option>
+                                <option value="Galaxy Nha Trang Center">Galaxy Nha Trang Center</option>
+                                <option value="Galaxy Trường Chinh">Galaxy Trường Chinh</option>
+                                <option value="Galaxy GO! Mall Bà Rịa">Galaxy GO! Mall Bà Rịa</option>
+                                <option value="Galaxy Aeon Huế">Galaxy Aeon Huế</option>
+                                <option value="Galaxy Parc Mall Q8">Galaxy Parc Mall Q8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select id="dateSelect" class="form-select text-sm mb-2" aria-label="Chọn ngày">
+                                <option selected disabled>Chọn ngày</option>
+                                <option value="2024-10-17">thứ năm, 17/10/2024</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>                
+            </div>            
+            <div>
+                <span class="border-start border-4 border-blue-10 me-2"></span>
+                <h1 class="mb-4 text-uppercase fs-6 fw-medium d-inline-block">Phim đang chiếu</h1>
+            </div>
+            <div class="movie_content">
+                <ul class="list-unstyled d-flex flex-column">
+                    <li class="transition-all duration-300">
+                        <div class="position-relative w-100 max-w-400">
+                            <div class="card rounded overflow-hidden cursor-pointer">
+                                <div class="position-relative">
+                                    <img src="https://cdn.galaxycine.vn/media/2024/10/1/my-dearest-fubao-2_1727752835864.jpg" alt="my-dearest-fubao" class="img-fluid rounded">
+                                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none d-md-flex align-items-center justify-content-center transition-opacity">
+                                        <a type="button" class="muave-button text-white w-30 text-center rounded text-sm px-4 py-2" style="background-color: #ff5733;">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7222 6.33333H5.27778C4.81753 6.33333 4.44444 6.70642 4.44444 7.16667V12.1667C4.44444 12.6269 4.81753 13 5.27778 13H14.7222C15.1825 13 15.5556 12.6269 15.5556 12.1667V7.16667C15.5556 6.70642 15.1825 6.33333 14.7222 6.33333ZM14.4444 11.8889H5.55556V7.44444H14.4444V11.8889ZM18.8889 8.55556H20V4.66667C20 3.74618 19.2538 3 18.3333 3H1.66667C0.746181 3 0 3.74618 0 4.66667V8.55556H1.11111C1.72476 8.55556 2.22222 9.05302 2.22222 9.66667C2.22222 10.2803 1.72476 10.7778 1.11111 10.7778H0V14.6667C0 15.5872 0.746181 16.3333 1.66667 16.3333H18.3333C19.2538 16.3333 20 15.5872 20 14.6667V10.7778H18.8889C18.2752 10.7778 17.7778 10.2803 17.7778 9.66667C17.7778 9.05302 18.2752 8.55556 18.8889 8.55556ZM18.8889 11.8889V14.6667C18.8889 14.973 18.6397 15.2222 18.3333 15.2222H1.66667C1.36031 15.2222 1.11111 14.973 1.11111 14.6667V11.8889C2.33646 11.8889 3.33333 10.892 3.33333 9.66667C3.33333 8.44132 2.33646 7.44444 1.11111 7.44444V4.66667C1.11111 4.36031 1.36031 4.11111 1.66667 4.11111H18.3333C18.6397 4.11111 18.8889 4.36031 18.8889 4.66667V7.44444C17.6635 7.44444 16.6667 8.44132 16.6667 9.66667C16.6667 10.892 17.6635 11.8889 18.8889 11.8889Z" fill="white"/>
+                                            </svg>
+                                            Mua vé
+                                        </a>
+                                    </div>
+                                    <div class="votes position-absolute bottom-0 end-0 p-2">
+                                        <p class="mb-4">
+                                            <span>
+                                                <i class="fas fa-star text-warning me-1"></i>
+                                            </span>
+                                            <span class="fw-bold text-white fs-6">7.9</span>
+                                        </p>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3"> 
+                                <a class="text-sm font-semibold d-block" href="/dat-ve/my-dearest-fubao/">Fubao: Bảo Bối Của Ông</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="transition-all duration-300">
+                        <div class="position-relative w-100 max-w-400">
+                            <div class="card rounded overflow-hidden cursor-pointer">
+                                <div class="position-relative">
+                                    <img src="https://cdn.galaxycine.vn/media/2024/10/9/co-dau-hao-mon-2_1728456490910.jpg" alt="co-dau-hao-mon" class="img-fluid rounded">
+                                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none d-md-flex align-items-center justify-content-center transition-opacity">
+                                        <a type="button" class="muave-button text-white w-30 text-center rounded text-sm px-4 py-2" style="background-color: #ff5733;">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7222 6.33333H5.27778C4.81753 6.33333 4.44444 6.70642 4.44444 7.16667V12.1667C4.44444 12.6269 4.81753 13 5.27778 13H14.7222C15.1825 13 15.5556 12.6269 15.5556 12.1667V7.16667C15.5556 6.70642 15.1825 6.33333 14.7222 6.33333ZM14.4444 11.8889H5.55556V7.44444H14.4444V11.8889ZM18.8889 8.55556H20V4.66667C20 3.74618 19.2538 3 18.3333 3H1.66667C0.746181 3 0 3.74618 0 4.66667V8.55556H1.11111C1.72476 8.55556 2.22222 9.05302 2.22222 9.66667C2.22222 10.2803 1.72476 10.7778 1.11111 10.7778H0V14.6667C0 15.5872 0.746181 16.3333 1.66667 16.3333H18.3333C19.2538 16.3333 20 15.5872 20 14.6667V10.7778H18.8889C18.2752 10.7778 17.7778 10.2803 17.7778 9.66667C17.7778 9.05302 18.2752 8.55556 18.8889 8.55556ZM18.8889 11.8889V14.6667C18.8889 14.973 18.6397 15.2222 18.3333 15.2222H1.66667C1.36031 15.2222 1.11111 14.973 1.11111 14.6667V11.8889C2.33646 11.8889 3.33333 10.892 3.33333 9.66667C3.33333 8.44132 2.33646 7.44444 1.11111 7.44444V4.66667C1.11111 4.36031 1.36031 4.11111 1.66667 4.11111H18.3333C18.6397 4.11111 18.8889 4.36031 18.8889 4.66667V7.44444C17.6635 7.44444 16.6667 8.44132 16.6667 9.66667C16.6667 10.892 17.6635 11.8889 18.8889 11.8889Z" fill="white"/>
+                                            </svg>
+                                            Mua vé
+                                        </a>
+                                    </div>
+                                    <div class="votes position-absolute bottom-0 end-0 p-2">
+                                        <p class="mb-4">
+                                            <span>
+                                                <i class="fas fa-star text-warning me-1"></i>
+                                            </span>
+                                            <span class="fw-bold text-white fs-6">8.1</span>
+                                        </p>
+                                    </div>
+                                    <div class="age__limit position-absolute bottom-0 end-0 p-2">
+                                        <span class="badge bg-orange-10 text-white">T18</span>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3"> 
+                                <a class="text-sm font-semibold d-block" href="/dat-ve/co-dau-hao-mon/">Cô Dâu Hào Môn</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="transition-all duration-300">
+                        <div class="position-relative w-100 max-w-400">
+                            <div class="card rounded overflow-hidden cursor-pointer">
+                                <div class="position-relative">
+                                    <img src="https://cdn.galaxycine.vn/media/2024/10/7/bocchi-the-rock-recap-part-1-2_1728269976716.jpg" alt="bocchi-the-rock-recap-part-1" class="img-fluid rounded">
+                                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none d-md-flex align-items-center justify-content-center transition-opacity">
+                                        <a type="button" class="muave-button text-white w-30 text-center rounded text-sm px-4 py-2" style="background-color: #ff5733;">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7222 6.33333H5.27778C4.81753 6.33333 4.44444 6.70642 4.44444 7.16667V12.1667C4.44444 12.6269 4.81753 13 5.27778 13H14.7222C15.1825 13 15.5556 12.6269 15.5556 12.1667V7.16667C15.5556 6.70642 15.1825 6.33333 14.7222 6.33333ZM14.4444 11.8889H5.55556V7.44444H14.4444V11.8889ZM18.8889 8.55556H20V4.66667C20 3.74618 19.2538 3 18.3333 3H1.66667C0.746181 3 0 3.74618 0 4.66667V8.55556H1.11111C1.72476 8.55556 2.22222 9.05302 2.22222 9.66667C2.22222 10.2803 1.72476 10.7778 1.11111 10.7778H0V14.6667C0 15.5872 0.746181 16.3333 1.66667 16.3333H18.3333C19.2538 16.3333 20 15.5872 20 14.6667V10.7778H18.8889C18.2752 10.7778 17.7778 10.2803 17.7778 9.66667C17.7778 9.05302 18.2752 8.55556 18.8889 8.55556ZM18.8889 11.8889V14.6667C18.8889 14.973 18.6397 15.2222 18.3333 15.2222H1.66667C1.36031 15.2222 1.11111 14.973 1.11111 14.6667V11.8889C2.33646 11.8889 3.33333 10.892 3.33333 9.66667C3.33333 8.44132 2.33646 7.44444 1.11111 7.44444V4.66667C1.11111 4.36031 1.36031 4.11111 1.66667 4.11111H18.3333C18.6397 4.11111 18.8889 4.36031 18.8889 4.66667V7.44444C17.6635 7.44444 16.6667 8.44132 16.6667 9.66667C16.6667 10.892 17.6635 11.8889 18.8889 11.8889Z" fill="white"/>
+                                            </svg>
+                                            Mua vé
+                                        </a>
+                                    </div>
+                                    <div class="votes position-absolute bottom-0 end-0 p-2">
+                                        <p class="mb-4">
+                                            <span>
+                                                <i class="fas fa-star text-warning me-1"></i>
+                                            </span>
+                                            <span class="fw-bold text-white fs-6">8.5</span>
+                                        </p>
+                                    </div>
+                                    <div class="age__limit position-absolute bottom-0 end-0 p-2">
+                                        <span class="badge bg-orange-10 text-white">T18</span>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3"> 
+                                <a class="text-sm font-semibold d-block" href="/dat-ve/bocchi-the-rock-recap-part-1/">Bocchi The Rock: Recap Part 1</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-end">
+                    <a type="button" class="btn btn-outline-warning textend-btn text-[#ff5733] hover:bg-warning hover:text-white transition-all duration-300 focus:ring-1 focus:outline-none focus:ring-warning rounded text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2" href="/phim-dang-chieu/">
+                        Xem thêm
+                        <i class="fas fa-angle-right ml-2"></i>
+                    </a>
+                </div>                                          
+            </div>
+        </div>
+    </main>
+    <div class="line-default"></div>
+    <div class="seo_description">
+        <div class="container my-5 py-8">
+            <div class="content_data_full">
+                <span class="border-start border-4 border-primary me-2"></span>
+                <h1 class="mb-4 text-uppercase fs-6 fw-medium d-inline-block">LTM CINEMA</h1>
+                <div class="wysiwyg text-muted text-sm">
+                    <p class="mb-3">
+                        Bạn là một người mê phim, bạn thích khám phá bí mật phía sau hậu trường của các bom tấn, bạn thần tượng nhà làm phim nào đấy bởi tư duy vượt thời đại, phong cách quay phim đặc biệt và những câu chuyện đầy mới lạ, bạn ngưỡng mộ một ngôi sao bởi khả năng diễn xuất cực đỉnh… Thậm chí nếu bạn muốn tìm hiểu sâu hơn về điện ảnh, các trào lưu chủ nghĩa từng tạo tiếng vang trong lịch sử, sự ra đời của các thể loại và bản sắc riêng của từng nền điện ảnh đến từ các quốc gia khác nhau.
+                    </p>
+                    <p class="mb-3">
+                        Chào mừng đến chuyên trang điện ảnh, nơi được xem như một thư viện với đầy đủ các thông tin về những bộ phim, đạo diễn, diễn viên dành cho người yêu phim. Tại đây bạn dễ dàng tìm hiểu được tiểu sử của vị đạo diễn yêu thích, có được thông tin bên lề của các bộ phim hay đang chiếu tại rạp. Ngoài ra nếu đam mê những tác phẩm kinh điển trong quá khứ, vẫn có những bài bình luận với hạng mục Phim Kinh Điển.
+                    </p>
+                    <p class="mb-3">
+                        Đối với những ai có hứng thú tìm hiểu đời tư của các minh tinh hạng A, <em><strong>LTM Cinema</strong></em> cũng luôn cập nhật các tin tức nóng hổi từ họ. Bên cạnh đó còn bao gồm các bài phân tích mang tính chuyên môn, các chủ đề giúp nâng cao kiến thức điện ảnh cũng được giới thiệu qua loạt bài Ký Sự Điện Ảnh.
+                    </p>
+                    <p>
+                        <em><strong>LTM Cinema</strong></em> – rạp chiếu được trang bị hệ thống âm thanh và hình ảnh hàng đầu Việt Nam, tự hào là Trạm Điện Ảnh sẵn sàng đưa bạn vào thế giới Phim Như Sống – Sống Như Phim, cùng những chuyến tàu với trải nghiệm thú vị tuyệt vời nhất trên màn ảnh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../../../Components/Footer.js"></script>
+    <script type="module" src="../../../Components/Navigation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <footer>
+        <p>&copy; </p>
+    </footer>
+</body>
+</html>

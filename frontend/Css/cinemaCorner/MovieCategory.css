@@ -1,0 +1,69 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.card {
+    position: relative;
+}
+.overlay {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover .overlay {
+    opacity: 1;
+    display: flex;
+}
+.muave-button:hover {
+    background: linear-gradient(to right, #FC4100, #FFC55A);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.textend-btn {
+    color: #ff5733;
+    border-color: #ff5733;
+}
+.textend-btn:hover {
+    background-color: #ff5733;
+    color: white;
+}
+
+.pagination {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page-item {
+    display: inline-block;
+}
+
+.page-link {
+    text-decoration: none;
+    border: none;
+    border-radius: 20%;
+    background-color: transparent;
+    color: grey;
+}
+.page-link:hover {
+    background-color: #ff5833c7;
+    color: white;
+}
+.page-item .page-link.active{
+    background-color: #ff5733;
+    color: white;
+}
+
+.page-item.disabled .page-link {
+    background-color: transparent;
+    color: grey;
+}
+.trailer__wrapper {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.774);
+}

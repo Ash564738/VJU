@@ -1,0 +1,2 @@
+ Lõi 'ERR_OSSL_EVP_UNSUPPORTED'
+ Chạy lệnh sau vào pwsh: $env:NODE_OPTIONS="--openssl-legacy-provider"
